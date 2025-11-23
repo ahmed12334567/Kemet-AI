@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* THEME COLORS */
+:root {
+    --bg-light: #f5f7fa;
+    --bg-dark: #1c1f26;
+    --card-light: #ffffff;
+    --card-dark: #2a2f39;
+    --accent: #4f8cff;
+    --accent-hover: #3a6fd4;
+    --text-light: #1c1f26;
+    --text-dark: #e3e6ec;
+}
+
+body {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ↳ MAIN CONTAINER  */
+.contaner {
+    background: var(--card-dark);
+    width: 400px;
+    padding: 10px 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contaner h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* ↳ INPUTS  */
+.contaner input {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 5px;
+    background: var(--bg-dark);
+    color: var(--text-dark);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+
+.contaner input:focus {
+    border: 1px solid var(--accent);
+    box-shadow: 0 0 5px var(--accent);
+}
+
+/* ↳ ERROR TEXT */
+.contaner .err {
+    color: rgb(255, 12, 12);
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+/* ↳ BUTTON */
+.contaner button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.contaner button:hover {
+    background: var(--accent-hover);
+}
+
+/* ↳ SOCIAL ICONS (لو هتستخدمها) */
+.contaner .socil {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 5px 0;
+}
+
+.contaner .socil a {
+    font-size: 1.45em;
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: 0.3s ease;
+}
+
+.contaner .socil a:hover {
+    color: var(--accent);
+}
+
+/* ↳ FOOTER TEXT */
+.contaner p {
+    text-align: center;
+    margin-top: 12px;
+    color: var(--text-dark);
+}
+
+.contaner a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.contaner a:hover {
+    text-decoration: underline;
+}
