@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css files/singup.css">
+    <title>Signup Page</title>
+</head>
+<body>
+    <div class="contaner">
+        <h1>Create Account</h1>
+        <form novalidate>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" autocomplete="username" />
+            <p class="err" id="usernameErr"></p>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" />
+            <p class="err" id="emailErr"></p>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" />
+            <p class="err" id="passwordErr"></p>
+
+            <label for="Cpassword">Confirm Password:</label>
+            <input type="password" id="Cpassword" name="confirm_password" />
+            <p class="err" id="confirmPasswordErr"></p>
+
+            <button type="submit">Signup</button>
+            <p>Already have an account? <a href="login.html" title="Go To Login">Login</a></p>
+        </form>
+    </div>
+
+    <script src="JS files/singup.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ancient Egypt AI Assistant</title>
+  <link rel="stylesheet" href="css files/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="dark">
+
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <div id="sun-disk"></div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="#" class="nav-logo">KEMET AI</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="login.html" class="nav-link">
+        <i class="fa-regular fa-circle-user"></i>
+      </a>
+
+      <button class="setting">
+        <i class="fa-solid fa-gear"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Settings Panel -->
+  <div id="setting">
+    <h3>Settings</h3>
+
+    <div class="mode">
+      <label class="switch">
+        <input type="checkbox" id="theme">
+        <span class="slider"></span>
+      </label>
+      <p>Mode</p>
+    </div>
+
+    <div class="lang">
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="ar">Arabic</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="zh">Chinese</option>
+      </select>
+      <p>Language</p>
+    </div>
+  </div>
+
+  <!-- Main Interface -->
+  <div id="app" class="hidden">
+
+    <header>
+      <!-- EMPTY HEADER STRUCTURE IF NEEDED -->
+    </header>
+
+    <div id="info-section">
+      <p class="title">What can I help with?</p>
+    </div>
+
+    <div id="chat-container">
+      <div id="chat-history"></div>
+      <div id="loading" class="hidden"></div>
+    </div>
+
+    <!-- Message Input -->
+    <div class="messageBox" id="input-container">
+      <div class="fileUploadWrapper">
+        <label for="file">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 337 337">
+            <circle stroke-width="20" stroke="#6c6c6c" fill="none" r="158.5" cy="168.5" cx="168.5"></circle>
+            <path stroke-linecap="round" stroke-width="25" stroke="#6c6c6c" d="M167.759 79V259"></path>
+            <path stroke-linecap="round" stroke-width="25" stroke="#6c6c6c" d="M79 167.138H259"></path>
+          </svg>
+          <span class="tooltip">Add an image</span>
+        </label>
+        <input type="file" id="file" name="file" />
+      </div>
+
+      <input required placeholder="Message..." type="text" id="messageInput" autocomplete="off" />
+
+      <button id="sendButton">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 664 663">
+          <path fill="none"
+            d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888"></path>
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="33.67" stroke="#6c6c6c"
+            d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888">
+          </path>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <script src="JS files/main.js"></script>
+</body>
+</html>
